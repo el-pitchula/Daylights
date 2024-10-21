@@ -1,17 +1,18 @@
+love.graphics.setDefaultFilter("nearest", "nearest")
+
 local game = require("src.game")
+local player = require("src.player")
 
 function love.load()
-    game.load()  -- Inicializa o jogo
+    game.load()  -- Carrega o mapa e os objetos do jogo
+    player.load() -- Carrega o jogador
 end
 
 function love.update(dt)
-    game.update(dt)  -- Atualiza o estado do jogo
+    player.update(dt)  -- Atualiza a posição do jogador
 end
 
 function love.draw()
-    game.draw()  -- Desenha o jogo
-end
-
-function love.keypressed(key)
-    game.keypressed(key)  -- Checa interações com o teclado
+    game.draw()    -- Desenha o mapa e os objetos
+    player.draw()  -- Desenha o jogador
 end
