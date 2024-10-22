@@ -1,3 +1,5 @@
+-- the requiem palace
+
 local map1 = {}
 
 map1.width = 10
