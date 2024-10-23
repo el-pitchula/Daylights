@@ -85,10 +85,10 @@ tools_label = ttk.Label(right_frame, text="Ferramentas", font=("Helvetica", 14, 
 tools_label.pack(pady=10)
 
 # Criar botões com ícones e estilos personalizados
-save_button = create_icon_button(right_frame, "Salvar", "#4CAF50", "💾", "Green.TButton")  # Ícone de disquete (salvar)
-comments_button = create_icon_button(right_frame, "Comentários", "#FFC107", "💬", "Yellow.TButton")  # Ícone de balão de fala (comentário)
-zoom_in_button = create_icon_button(right_frame, "Zoom +", "#2196F3", "🔍+", "Blue.TButton")  # Ícone de lupa com mais
-zoom_out_button = create_icon_button(right_frame, "Zoom -", "#FF5722", "🔍-", "Orange.TButton")  # Ícone de lupa com menos
+save_button = create_icon_button(right_frame, "", "#4CAF50", "💾", "Green.TButton")  # Ícone de disquete (salvar)
+comments_button = create_icon_button(right_frame, "", "#FFC107", "💬", "Yellow.TButton")  # Ícone de balão de fala (comentário)
+zoom_in_button = create_icon_button(right_frame, "+", "#2196F3", "🔍+", "Blue.TButton")  # Ícone de lupa com mais
+zoom_out_button = create_icon_button(right_frame, "-", "#FF5722", "🔍-", "Orange.TButton")  # Ícone de lupa com menos
 
 # Inicia o loop da interface
 root.mainloop()
